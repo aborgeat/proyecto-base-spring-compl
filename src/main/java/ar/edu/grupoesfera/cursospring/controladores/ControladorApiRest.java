@@ -19,7 +19,7 @@ public class ControladorApiRest {
 	private PersonaService personaService;
 	
 	@RequestMapping(name="/personas", method = RequestMethod.GET)
-	public List<Persona> test(){
+	public List<Persona> listarPersonas(){
 		Persona seba = new Persona();
 		seba.setApellido("Ismael");
 		seba.setEmail("seba@seba.com");
@@ -30,7 +30,12 @@ public class ControladorApiRest {
 	}
 	
 	@RequestMapping("/persona/{id}")
-	public Persona helloWorld2(@PathVariable Long id) {
+	public Persona obtenerUnaPersona(@PathVariable Long id) {
 		return this.personaService.buscarPorId(id);
 	}
+
+	public void setPersonaService(PersonaService personaService) {
+		this.personaService = personaService;
+	}
+	
 }
