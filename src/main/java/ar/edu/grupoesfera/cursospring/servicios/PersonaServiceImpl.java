@@ -1,4 +1,4 @@
-package ar.edu.grupoesfera.cursospring.modelo;
+package ar.edu.grupoesfera.cursospring.servicios;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.grupoesfera.cursospring.dao.PersonaDao;
-import ar.edu.grupoesfera.cursospring.servicios.PersonaService;
+import ar.edu.grupoesfera.cursospring.modelo.Persona;
 
 @Service("personaService")
 @Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
