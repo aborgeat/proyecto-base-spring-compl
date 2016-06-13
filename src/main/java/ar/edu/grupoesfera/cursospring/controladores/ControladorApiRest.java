@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ar.edu.grupoesfera.cursospring.modelo.Persona;
 import ar.edu.grupoesfera.cursospring.servicios.PersonaService;
 
-@RestController
+@RestController("/api")
 public class ControladorApiRest {
 
 	@Inject
