@@ -14,11 +14,7 @@
 
 	<import resource="classpath:hibernateContext.xml" />
 
-	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/>
-	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
-	    <!-- Turn off working out content type based on URL file extension, should fall back to looking at the Accept headers -->
-	    <property name="favorPathExtension" value="false" />
-	</bean>
+	<mvc:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<context:component-scan base-package="ar.edu.grupoesfera.cursospring.controladores" />

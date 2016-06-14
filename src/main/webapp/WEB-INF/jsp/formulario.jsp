@@ -28,10 +28,6 @@
 						<label for="mail">Mail</label>
 						<form:input id="mail" class="form-control" type="mail" path="email" placeholder="Ingresar Mail" />
 					</div>
-					<div class="form-group">
-						<label for="edad">Edad</label>
-						<form:input id="edad" class="form-control" type="text" path="edad" placeholder="Ingresar Edad" />
-					</div>
 					<button type="submit" class="btn btn-default">Enviar</button>
 				</form:form>
 			</div>

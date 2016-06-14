@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import ar.edu.grupoesfera.cursospring.modelo.Persona;
 import ar.edu.grupoesfera.cursospring.servicios.PersonaService;
 
-@RestController("/api")
+@RestController
 public class ControladorApiRest {
 
 	@Inject
 	private PersonaService personaService;
 	
-	@RequestMapping(name="/personas", method = RequestMethod.GET)
+	@RequestMapping(path="/api/personas", method = RequestMethod.GET)
 	public List<Persona> listarPersonas(){
 		Persona seba = new Persona();
 		seba.setApellido("Ismael");
@@ -29,7 +29,7 @@ public class ControladorApiRest {
 		return personas;
 	}
 	
-	@RequestMapping("/persona/{id}")
+	@RequestMapping(path="/api/persona/{id}")
 	public Persona obtenerUnaPersona(@PathVariable Long id) {
 		return this.personaService.buscarPorId(id);
 	}

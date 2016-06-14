@@ -32,7 +32,7 @@ public class ControladorPersonas {
 	}
 	
 	
-	@RequestMapping(value = "/saludo", method = RequestMethod.POST)
+	@RequestMapping(path="/saludo", method = RequestMethod.POST)
     public ModelAndView addContact(@ModelAttribute("persona") Persona persona) {
 		ModelMap model = new ModelMap(); 
 		model.put("nombre", persona.getNombre());

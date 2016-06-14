@@ -16,9 +16,6 @@
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="theme.css" rel="stylesheet">
-
   </head>
 
   <body role="document">
@@ -58,6 +55,12 @@
     </nav>
 
     <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+      </div>
 		<div class="page-header">
 			<h1>Ejemplos Spring MVC</h1>
 		</div>
@@ -72,12 +75,6 @@
 				<a href="formulario"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Ir a Form</a> 
 			</button>
 		</p>
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Theme example</h1>
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
-      </div>
-
 
       <div class="page-header">
         <h1>Buttons</h1>
