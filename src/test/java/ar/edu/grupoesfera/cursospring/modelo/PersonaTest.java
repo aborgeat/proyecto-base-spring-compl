@@ -9,6 +9,13 @@ import ar.edu.grupoesfera.cursospring.SpringTest;
 
 public class PersonaTest extends SpringTest{
 
+//	@Test
+//	@Transactional
+//	@Rollback(true)
+//	public void lis2tar(){
+//		System.out.println("2 " + getSession().createCriteria(Persona.class).list().size());
+//	}
+	
 	@Test
 	@Transactional
 	@Rollback(true)
@@ -18,6 +25,15 @@ public class PersonaTest extends SpringTest{
 		seba.setEmail("seba@seba.com");
 		seba.setNombre("Sebastian");
 		getSession().save(seba);
+//		getSession().flush();
+//		getSession().getTransaction().commit();
 		assertThat(getSession().get(Persona.class, seba.getId())).isNotNull();
 	}
+	
+//	@Test
+//	@Transactional
+//	@Rollback(true)
+//	public void listar(){
+//		System.out.println("1 " + getSession().createCriteria(Persona.class).list().size());
+//	}
 }
