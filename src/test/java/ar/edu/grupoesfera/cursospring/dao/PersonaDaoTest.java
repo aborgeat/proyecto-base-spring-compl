@@ -15,7 +15,6 @@ import ar.edu.grupoesfera.cursospring.modelo.Persona;
 public class PersonaDaoTest extends SpringTest{
 	@Inject
 	private PersonaDao dao;
-	
 	@Before
 	public void before(){
 		Persona seba = new Persona();
@@ -35,6 +34,13 @@ public class PersonaDaoTest extends SpringTest{
 	@Transactional @Rollback(true)
 	public void testFindAll(){
 		assertThat(dao.findAll()).hasSize(2);
+	}
+
+	@Test
+	@Transactional @Rollback(true)
+	public void findAllDeberiaDevolverListaVaciaSiNoHayFarmacias(){
+		getSession().createQuery("delete from Persona").executeUpdate();
+		assertThat(dao.findAll()).hasSize(0);
 	}
 
 }
