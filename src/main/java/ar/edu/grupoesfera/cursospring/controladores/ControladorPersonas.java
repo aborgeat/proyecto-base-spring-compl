@@ -30,8 +30,7 @@ public class ControladorPersonas {
 		model.put("message", message);
 		return new ModelAndView("mensaje", model);
 	}
-	
-	
+
 	@RequestMapping(path="/saludo", method = RequestMethod.POST)
     public ModelAndView addContact(@ModelAttribute("persona") Persona persona) {
 		ModelMap model = new ModelMap(); 
@@ -45,8 +44,8 @@ public class ControladorPersonas {
 	public ModelAndView irAForm(){
 		ModelMap model = new ModelMap();
 		Persona persona = new Persona();
-//		persona.setNombre("Juan Carlos");
-//		persona.setApellido("Calabro");
+		persona.setNombre("Juan Carlos");
+		persona.setApellido("Calabro");
 		model.put("persona", persona);
 		return new ModelAndView("formulario", model);
 	}
