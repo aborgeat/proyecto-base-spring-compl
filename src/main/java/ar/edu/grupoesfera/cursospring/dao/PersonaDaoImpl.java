@@ -19,6 +19,7 @@ public class PersonaDaoImpl implements PersonaDao{
     
 	@SuppressWarnings("unchecked")
 	public List<Persona> findAll() {
+		System.out.println("Ejecutando find all");
 		return (List<Persona>) sessionFactory.getCurrentSession().createCriteria(Persona.class).list();
 	}
 
