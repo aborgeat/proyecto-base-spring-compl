@@ -26,7 +26,7 @@ public class ControladorApiRestTest {
 		Persona personaMock = mock(Persona.class);
 		List<Persona> lista = Arrays.asList(personaMock);
 		when(personaServiceMock.listarTodas()).thenReturn(lista);
-		
+		//
 		assertThat(controlador.listarPersonas()).hasSize(1);
 		assertThat(controlador.listarPersonas()).containsOnly(personaMock);
 	}
