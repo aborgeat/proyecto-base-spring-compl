@@ -32,7 +32,7 @@
 				</form:form>
 			</div>
 			<div>
-			    <a href="${pageContext.request.contextPath}" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Volver</a>
+			  
 			</div>
 		</div>
 	</div>

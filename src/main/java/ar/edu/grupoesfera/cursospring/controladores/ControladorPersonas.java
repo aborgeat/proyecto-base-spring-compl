@@ -15,7 +15,7 @@ import ar.edu.grupoesfera.cursospring.modelo.Persona;
 public class ControladorPersonas {
 
 	@RequestMapping("/hi/amigo")
-	public ModelAndView helloWorld(@RequestParam("nombre") String nombre) {
+	public ModelAndView helloWorld(@RequestParam(name="nombre") String nombre) {
 		
 		String message = "Hola, " + nombre + " !";
 		ModelMap model = new ModelMap();
@@ -24,7 +24,7 @@ public class ControladorPersonas {
 	}
 
 	@RequestMapping("/hola/{nombre}")
-	public ModelAndView helloWorld2(@PathVariable String nombre) {
+	public ModelAndView helloWorld2(@PathVariable String nombre, @PathVariable String apellido) {
 		String message = "Hola, " + nombre + "!";
 		ModelMap model = new ModelMap();
 		model.put("message", message);

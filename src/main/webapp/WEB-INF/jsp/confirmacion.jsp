@@ -18,7 +18,7 @@
 				<h2>Nombre: ${nombre}</h1>
 			    <h2>Apellido: ${apellido}</h2>
 			    <h2>EMAIL: ${mail}</h2>
-			    <a href="${pageContext.request.contextPath}" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Volver</a>
+			  
 			</div>
 		</div>
     </div>
