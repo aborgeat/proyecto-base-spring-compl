@@ -28,6 +28,8 @@ public class PersonaDaoTest extends SpringTest{
 		pedro.setEmail("pedro@pedro.com");
 		pedro.setNombre("Pedro");
 		getSession().save(pedro);
+	
+		
 	}
 	
 	@Test
